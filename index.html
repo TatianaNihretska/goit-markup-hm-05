@@ -500,8 +500,14 @@
 
           </div>
           <div class="form-field-wrapper">
-            <input type="checkbox" id="user-privacy" name="user-privacy" value="true">
-            <label  for="user-privacy">I accept the terms and conditions of the <a href="#" class="accent policy-link">Privacy Policy</a></label>
+            <input class="policy-checkbox visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true">
+            <label  for="user-privacy" class="policy-label">
+              <span class="custom-checkbox">
+                <svg class="chek-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-chek"> </use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the <a href="#" class="accent policy-link">Privacy Policy</a></label>
           </div>
           <button class="button-send" type="submit">Send</button>
           
