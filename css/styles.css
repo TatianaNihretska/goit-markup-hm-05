@@ -529,7 +529,8 @@ font-family: "Raleway", sans-serif;;
    background-color: #fcfcfc;
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
+
  }
 
  .backdrop:not(.is-open) .modal {
@@ -576,7 +577,7 @@ border: none;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
  }
  .field-wrapper{
   position: relative;
@@ -598,7 +599,8 @@ border: none;
     height: 40px;
     background-color: transparent;
     padding-left: 38px;
-    transition: border-color 250ms ease;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
 
  }
  .text-field:focus{
@@ -610,16 +612,16 @@ border: none;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: fill 250ms ease;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .form-field-wrapper{
   font-family: "Roboto", sans-serif;
-  margin-bottom: 8px;
   color: #8e8f99;
 font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  margin-bottom: 24px;
 
  }
  .text-field:focus + .field-icon{
@@ -633,8 +635,11 @@ font-weight: 400;
       padding: 8px 16px;
       resize: none;
       background-color: transparent;
-      outline: none;
-      transition: border-color 250ms ease;
+      outline: transparent;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      line-height: 1.17;
+      letter-spacing: 0.04em;
+      color: rgba(46, 47, 66, 0.4);
   }
     .comment-textarea::placeholder{
       font-family: "Roboto",sans-serif;
@@ -661,7 +666,6 @@ font-weight: 400;
     .button-send{
       border-radius: 4px;
         padding: 16px 32px;
-        width: 169px;
         height: 56px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           background:#4d5ae5 ;
@@ -675,4 +679,8 @@ font-weight: 400;
             cursor: pointer;
               display: block;
               margin: 0 auto;
+              min-width: 169px;
+              border: none;
+              transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
